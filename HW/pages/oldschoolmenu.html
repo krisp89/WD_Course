@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OldSchool Menu</title>
+    <style>
+    nav>ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-size: 1.2em;
+    }
+    ul>li{
+        border: 5px solid #AC24FF;
+        border-style:outset;
+        width: 19%;
+        height:auto;
+        box-sizing:content-box
+        
+    }
+    ul>li>a{
+        display: block;
+        border: 5px solid #6A00AB;
+        padding:7%;
+        background-color: #DBFB34;
+        
+        
+    }
+    .differentborder{
+        border-color: rgb(255, 47, 0);
+    }
+    </style>
+</head>
+<body>
+<nav>
+    <!-- ul with 5 items, the a border within each li element contains the same color, the border of all li elements except for the second one contain the same color; -->
+  <ul>
+    <li><a href="#"> Home</a></li>
+    <li class="differentborder"><a href="#"> About</a></li>
+    <li><a href="#"> Menu</a></li>
+    <li><a href="#"> Gallery</a></li>
+    <li><a href="#"> Contact</a></li>
+    
+  </ul>    
+</nav>
+    
+</body>
+</html>
