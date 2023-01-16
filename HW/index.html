@@ -5,22 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Completed tasks</title>
-    <!-- <style>
-        div{
-            width:fit-content;
+    <style>
+        body{
+            background-color:rgba(83, 122, 136, 0.519)
+        }
+        .header{
+            text-align: center;
+        }
+        .ulstyle{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:nowrap;
+            list-style-type: none;
+            /* border: 2px solid black; */
+            margin:0em;
+        }
+        .ulstyle>li{
+            /* border: 3px solid green; */
+            margin: 0em;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
+            /* border: 2px solid red; */
+        }
+        .ultest{
+            display: flex;
             margin: auto;
+            justify-content: center;
         }
-        div.ulstyle{
-            border-style: dashed;
-            padding-top: 10px;
-            padding-bottom: 15px;
-        }
-    </style> -->
+    </style>
 </head>
 <body>
-    <div>
+    <div class="header">
     <h1>List with completed tasks</h1>
     <img src="/images/todolist.jpg" width="250" title="Completed tasks" alt="completed tasks"><br><br>
+</div>
+<div class="ultest">
     <ul class="ulstyle">
     <li><h3><a href="./pages/personalPage.html" target="_blank"> My personal page</a></h3></li>
     <li><h3><a href="./pages/CV.html" target="_blank"> Kris Papingi CV</a></h3></li>
@@ -28,14 +50,20 @@
     <li><h3><a href="./pages/olandul.html" target="_blank"> Ordered and unordered lists 1</a></h3></li>
     <li><h3><a href="./pages/nestedlistsfood.html" target="_blank"> Nested lists food</a></h3></li>
     <li><h3><a href="./pages/nestedlistmusic.html" target="_blank"> Nested list music</a></h3></li>
+    </ul>
+    <ul class="ulstyle">
     <li><h3><a href="./pages/slotmachine.html" target="_blank"> Slot machine</a></h3></li>
     <li><h3><a href="./pages/fifatable.html" target="_blank"> Fifa table</a></h3></li>
     <li><h3><a href="./pages/simpleFormControls.html" target="_blank"> Simple form controls</a></h3></li>
     <li><h3><a href="./pages/thecrow.html" target="_blank"> The crow</a></h3></li>
     <li><h3><a href="./pages/aphorismslist.html" target="_blank">Aphorisms list</a></h3></li>
     <li><h3><a href="./pages/stretchbodytoviewport.html" target="_blank">Stretch body to viewport</a></h3></li>
-    <li><h3><a href="./pages/oldschoolmenu.html" target="_blank">Old school menu</a></h3></li>
 
+   </ul>
+   
+   <ul class="ulstyle">    
+    <li><h3><a href="./pages/oldschoolmenu.html" target="_blank">Old school menu</a></h3></li>
+    <li><h3><a href="./pages/floatingimages.html" target="_blank">Floating Images</a></h3></li>
 </ul>
 </div>
 </body>

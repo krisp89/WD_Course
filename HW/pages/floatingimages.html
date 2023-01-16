@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating images</title>
+    <style>
+        body{
+            font-size: 1.2em;
+        }
+        h1{
+            text-align: center;
+        }
+        .left{
+            float: left;
+        }
+        div>img{
+            height: 5%;
+            width: 5%;
+        }
+        .right{
+            float: right;
+        }
+        .pimg::after{
+            content: "";
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<h1>Lorem title</h1>
+<div class="pimg">
+
+     <img class="left" src="../images/slotmachine/bananas.png" alt="This is a banana pic"><p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum exercitationem atque debitis modi? Voluptatum temporibus error dolores libero eveniet quia repudiandae. Omnis laudantium dolores iure nisi similique fuga aspernatur molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quibusdam fugiat repellat eius veniam molestias quasi. Tenetur, doloribus. Modi, reiciendis veritatis. Sed adipisci facere aliquid dicta qui accusamus officiis fugit!</p>    
+    
+     <img class="right" src="../images/slotmachine/apple.png" alt="This is an apple pic"> <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum exercitationem atque debitis modi? Voluptatum temporibus error dolores libero eveniet quia repudiandae. Omnis laudantium dolores iure nisi similique fuga aspernatur molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit hic eius maxime minima veniam optio, accusantium, culpa vitae deserunt eveniet repellat natus eos illum, nobis suscipit omnis quo vero.</p>
+
+  
+    <img class="left" src="../images/slotmachine/orange.png" alt="This is an orange pic"> <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum exercitationem atque debitis modi? Voluptatum temporibus error dolores libero eveniet quia repudiandae. Omnis laudantium dolores iure nisi similique fuga aspernatur molestiae.</p>    
+
+    <img class="right" src="../images/slotmachine/cherries.png" alt="This is a cherries pic"> <p>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum exercitationem atque debitis modi? Voluptatum temporibus error dolores libero eveniet quia repudiandae. Omnis laudantium dolores iure nisi similique fuga aspernatur molestiae.</p>    
+</div>
+</div>
+</body>
+</html>

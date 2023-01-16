@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>classicPageLayout</title>
+	<style>
+        /* we wrap aside, article and image into a parent block (main in the codepen example)
+        -the article block's position is set to relative
+        -the article+image block's position is absolute (so it can be specified relative to the parent element's block, in this case it's article)
+        -we create a separate block into aside for vertical centering, text-align=center
+        -create a separate block inside article, there create a seperate div to wrap the image and a div for the image itself
+        -aside and article both float to the left in their parent container (main in codepen)  */
+		
+	body {
+	  margin: 0;
+	  padding: 1em;
+	  font-size: 20px;
+	  background-color: #fdafb1;
+    }
+
+    header,footer {
+	 height: 10vh;
+	 padding-top: 3vh;
+	 font-size: 2em;
+	 text-align: center;
+	 color: #fff;
+	 background-color: #98d1c7;
+    }
+    main {
+	 margin: 1em 0;
+	 height: calc(80vh - 2em - 2em);
+    }
+    aside,article {
+	 float: left;
+	 height: 100%;
+	 margin: 0;
+    }
+    aside {
+	 position: relative;
+	 font-size: 2em;
+	 width: 30%;
+
+	background-color: #62b7b6;
+	color: #fff;
+     }
+   aside > div {
+	width: 100%;
+	text-align: center;
+   }
+    article {
+	 position: relative;
+	 width: calc(100% - 30% - 1em);
+	 margin-left: 1em;
+	 background-color: #fa7a7b;
+     }
+  .image-wrapper {
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	right: 1em;
+	height: 30vh;
+   }
+  .article-text {
+	height: 20%;
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+  }
+  .img {
+	float: left;
+	margin-left: 1em;
+	width: calc(33.3% - 1em);
+	height: 80%;
+	background-color: #d6d5d5;
+   }
+  .img > div {
+	font-size: 2em;
+	color: #fff;
+   }
+   image-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+   .v-centered {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: center;
+    }
+</style>
+		
+	</style>
+</head>
+<body>
+    <!-- we wrap aside, article and image into a parent block (main in the codepen example)
+    -the article block's position is set to relative
+    -the article+image block's position is absolute (so it can be specified relative to the parent element's block, in this case it's article)
+    -we create a separate block into aside for vertical centering, text-align=center
+    -create a separate block inside article, there create a seperate div to wrap the image and a div for the image itself
+    -aside and article both float to the left in their parent container (main in codepen)   -->
+	<header>header</header>
+<main>
+	<aside>
+		<div class="v-centered">aside</div>
+	</aside>
+	<article>
+		<div class="image-wrapper">
+			<div class="article-text">article</div>
+			<div class="img">
+				<div class="v-centered">image</div>
+			</div>
+			<div class="img">
+				<div class="v-centered">image</div>
+			</div>
+			<div class="img">
+				<div class="v-centered">image</div>
+			</div>
+
+		</div>
+	</article>
+
+	
+</main>
+<footer>footer</footer>
+</body>
+</html>
